@@ -6,7 +6,7 @@ class UDPserver
  public static void main(String args[]) throws Exception
  {
   DatagramSocket serverSocket = new 
-DatagramSocket(Integer.parseInt(args[0]));
+DatagramSocket(80);
   byte[] receiveData = new byte[1024];
   byte[] sendData = new byte[1024];
   while(true)

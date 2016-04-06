@@ -15,7 +15,7 @@ InputStreamReader(System.in));
   String sentence = inFromUser.readLine();
   sendData = sentence.getBytes();
   DatagramPacket sendPacket = new DatagramPacket(sendData, 
-sendData.length, IPAddress, Integer.parseInt(args[0]));
+sendData.length, IPAddress, 80);
   clientSocket.send(sendPacket);
   DatagramPacket receivePacket = new DatagramPacket(receiveData, 
 receiveData.length);
